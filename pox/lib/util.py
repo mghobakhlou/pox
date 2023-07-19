@@ -482,6 +482,12 @@ def hexdump (data):
   Converts raw data to a hex dump
   """
   if isinstance(data, (str,bytes)):
+    # print("hahahaha")
+    # print(len(data))
+    # for c in data:
+    #   print("in looooooooop")
+    #   print(c)
+    #   # print(ord(c))
     data = [ord(c) for c in data]
   o = ""
   def chunks (data, length):

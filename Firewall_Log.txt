@@ -1,0 +1,8061 @@
+Connection [00-00-00-00-00-02 3] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x008\x8d\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xffE5\x9b\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     14
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xf0n\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x88}u\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     15
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+Connection [00-00-00-00-00-01 2] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b'33\xff\x00\x00\x01\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01\x87\x00\xccv\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\x0e\x01\x98<\x0fH\xf9 '
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:ff:00:00:01
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     16
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 3
+  reason: 0
+  data: b'33\xff\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02\x87\x00\xdaz\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\x0e\x011\x87e8\xfb\xdf'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:ff:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     17
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x008\x8d\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xffE5\x9b\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     18
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b'33\xff\x00\x00\x03\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03\x87\x00(-\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\x0e\x01\xb1\xa1\x9f\xf7\xf3Q'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:ff:00:00:03
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     19
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xf0n\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x88}u\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     20
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 3
+  reason: 0
+  data: b'33\xff\x00\x00\x04\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04\x87\x00`q\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\x0e\x01Z\xf9\x00\xb4\xb0\xf7'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:ff:00:00:04
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     21
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xf1\xa6\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\xf8{\xcf\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     22
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\x81(\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\xab\xec\x9b\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     23
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     24
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     25
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     26
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     27
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     28
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x03\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     29
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     30
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     31
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x01\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     32
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     33
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x01\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     34
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x03\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     35
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     36
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     37
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     38
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     39
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  58
+    xid:     40
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     41
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     42
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     43
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     44
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     45
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     46
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     47
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     48
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     49
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     50
+  buffer_id: None
+  in_port: 3
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     51
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     52
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     53
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     54
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     55
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     56
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     57
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     58
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     59
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     60
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     61
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     62
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     63
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     64
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     65
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     66
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     67
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     68
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     69
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     70
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     71
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+Connection [00-00-00-00-00-01 5] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b'33\xff\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02\x87\x00>\xf9\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\x0e\x01\x19>\x81\x12\x93\xd0'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:ff:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     79
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 1
+  reason: 0
+  data: b'33\xff\x00\x00\x01\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01\x87\x00\xff\x03\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\x0e\x01\xb1\x81\x11\xa8\xaa\xee'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:ff:00:00:01
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     80
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00V\xbf\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\xe7\x16\xc9\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     81
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\x8d>\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\r\xe1"\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     82
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     83
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     84
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     85
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     86
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+Connection [00-00-00-00-00-01 7] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+Connection [00-00-00-00-00-02 8] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00J\xb9\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff?#u\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     100
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\x9e\xe3\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x91\xce\xf7\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     101
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xb4\xe8\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x90\xb8\xf6\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     102
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00J\xb9\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff?#u\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     103
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\x9e\xe3\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x91\xce\xf7\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     104
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xd1\x1f\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xffv\x9c\xd8\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     105
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 3
+  reason: 0
+  data: b'33\xff\x00\x00\x04\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04\x87\x00\xc5\x1c\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\x0e\x01\x18\xe0\xfc\x98\x92\x80'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:ff:00:00:04
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     106
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b'33\xff\x00\x00\x03\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03\x87\x00\xf6A\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\x0e\x01\x03\x05B\xe90\xe8'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:ff:00:00:03
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     107
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b'33\xff\x00\x00\x01\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01\x87\x00\x05,\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\x0e\x01\xffutm\xf4\x0c'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:ff:00:00:01
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     108
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 3
+  reason: 0
+  data: b'33\xff\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02\x87\x00)w\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\x0e\x01\x81l\xf9\xa5\xc8\x90'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:ff:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     109
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x01\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     110
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     111
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x03\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     112
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     113
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     114
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     115
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     116
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     117
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x01\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     118
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     119
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     120
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x03\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     121
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     122
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     123
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     124
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     125
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     126
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     127
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     128
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     129
+  buffer_id: None
+  in_port: 3
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     130
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-02, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     131
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+Connection [00-00-00-00-00-01 10] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b"33\xff\\q4.\x0f!\\q4\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\\q4\x87\x00\t\xb0\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00,\x0f!\xff\xfe\\q4\x0e\x01\xac\x14P'9\x02"
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 2e:0f:21:5c:71:34, packet.dst: 33:33:ff:5c:71:34
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     139
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16b\r\xe6<\x9f+\x86\xdd`\x00\x00\x00\x00$\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xd0"\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff<\x9f+'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 62:0d:e6:3c:9f:2b, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     140
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 1
+  reason: 0
+  data: b'33\xff<\x9f+b\r\xe6<\x9f+\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff<\x9f+\x87\x00\x9dr\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00`\r\xe6\xff\xfe<\x9f+\x0e\x01\x91\x00I&r\xa7'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 62:0d:e6:3c:9f:2b, packet.dst: 33:33:ff:3c:9f:2b
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     141
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+Connection [00-00-00-00-00-01 12] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xe1|\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x9d\x8cS\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     149
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00o\x90\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x8d\xfeN\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     150
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 3
+  reason: 0
+  data: b'33\xff\x00\x00\x03\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03\x87\x00\xb4\xf5\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\x0e\x01\x97!\x03\xec\x1d\x15'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:ff:00:00:03
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     151
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xe1|\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x9d\x8cS\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     152
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00d[\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xffz\t\x9a\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     153
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00o\x90\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x8d\xfeN\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     154
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 4
+  reason: 0
+  data: b'33\xff\x00\x00\x04\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04\x87\x00\xc2!\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\x0e\x01\xc7\xfe]\xf5\x85\x00'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:ff:00:00:04
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     155
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b'33\xff\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02\x87\x00bh\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\x0e\x01\xe4\x1f_\xcf\xc6\xc2'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:ff:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     156
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\x82_\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff)\xeb\xe5\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     157
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 1
+  reason: 0
+  data: b'33\xff\x00\x00\x01\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01\x87\x00k\xaf\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\x0e\x01\xad\xc58\xfe\x1a\xa9'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:ff:00:00:01
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     158
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x03\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     159
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     160
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x03\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     161
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x01\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     162
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     163
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     164
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     165
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     166
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     167
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     168
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x01\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     169
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     170
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     171
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     172
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     173
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     174
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  58
+    xid:     175
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  58
+    xid:     176
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  58
+    xid:     177
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     178
+  buffer_id: None
+  in_port: 1
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x08\x06\x00\x01\x08\x00\x06\x04\x00\x02\x00\x00\x00\x00\x00\x02\n\x00\x00\x02\x00\x00\x00\x00\x00\x01\n\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 00:00:00:00:00:01
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     179
+  match: 
+    in_port: 2
+    dl_src: 00:00:00:00:00:02
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x806
+    nw_proto: 2
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.1
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  116
+    xid:     0
+  buffer_id: None
+  total_len: 98
+  in_port: 1
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x08\x00E\x00\x00T5`@\x00@\x01\xf1F\n\x00\x00\x01\n\x00\x00\x02\x08\x00M\xc7\xd1v\x00\x04p\x95\xaed\x00\x00\x00\x00\xf0\xf0\n\x00\x00\x00\x00\x00\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 00:00:00:00:00:02
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     182
+  match: 
+    in_port: 1
+    dl_src: 00:00:00:00:00:01
+    dl_dst: 00:00:00:00:00:02
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 1
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.2
+    tp_src: 8
+    tp_dst: 0
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 2
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  116
+    xid:     0
+  buffer_id: None
+  total_len: 98
+  in_port: 2
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x08\x00E\x00\x00TI\x87\x00\x00@\x01\x1d \n\x00\x00\x02\n\x00\x00\x01\x00\x00U\xc7\xd1v\x00\x04p\x95\xaed\x00\x00\x00\x00\xf0\xf0\n\x00\x00\x00\x00\x00\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 00:00:00:00:00:01
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     185
+  match: 
+    in_port: 2
+    dl_src: 00:00:00:00:00:02
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 1
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.1
+    tp_src: 0
+    tp_dst: 0
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     188
+  buffer_id: None
+  in_port: 3
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     189
+  buffer_id: None
+  in_port: 1
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     190
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     191
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 2
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x02\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x02\n\x00\x00\x02\x00\x00\x00\x00\x00\x00\n\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 00:00:00:00:00:01
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     192
+  match: 
+    in_port: 2
+    dl_src: 00:00:00:00:00:02
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x806
+    nw_proto: 1
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.1
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x02\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x02\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 00:00:00:00:00:02
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     195
+  match: 
+    in_port: 1
+    dl_src: 00:00:00:00:00:01
+    dl_dst: 00:00:00:00:00:02
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x806
+    nw_proto: 2
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.2
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 2
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     198
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     199
+  buffer_id: None
+  in_port: 1
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     200
+  buffer_id: None
+  in_port: 3
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     201
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     202
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     203
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     204
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     205
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     206
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     207
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     208
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     209
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     210
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     211
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     212
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     213
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     214
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     215
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     216
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+Connection [00-00-00-00-00-01 14] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\xb6(\xb8\x11J\xfe\x86\xdd`\x00\x00\x00\x00$\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00${\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x11J\xfe'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: b6:28:b8:11:4a:fe, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     224
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b'33\xffx$\x89F#\xf8x$\x89\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xffx$\x89\x87\x00yQ\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00D#\xf8\xff\xfex$\x89\x0e\x01\x9cV"q\xb0\xde'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 46:23:f8:78:24:89, packet.dst: 33:33:ff:78:24:89
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     225
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 1
+  reason: 0
+  data: b'33\xff\x11J\xfe\xb6(\xb8\x11J\xfe\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x11J\xfe\x87\x00\x07W\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\xb4(\xb8\xff\xfe\x11J\xfe\x0e\x01\x80v\xca\xfd\x1a\x0b'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: b6:28:b8:11:4a:fe, packet.dst: 33:33:ff:11:4a:fe
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     226
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16F#\xf8x$\x89\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00D#\xf8\xff\xfex$\x89\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xeb\xe2\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xffx$\x89'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 46:23:f8:78:24:89, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     227
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02F#\xf8x$\x89\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00D#\xf8\xff\xfex$\x89\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00\xb8\xe3\x00\x00\x00\x00\x01\x01F#\xf8x$\x89'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 46:23:f8:78:24:89, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     228
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\xb6(\xb8\x11J\xfe\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\xb4(\xb8\xff\xfe\x11J\xfe\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00o\xc1\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x11J\xfe'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: b6:28:b8:11:4a:fe, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     229
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\xb6(\xb8\x11J\xfe\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\xb4(\xb8\xff\xfe\x11J\xfe\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00\x0c\xbd\x00\x00\x00\x00\x01\x01\xb6(\xb8\x11J\xfe'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: b6:28:b8:11:4a:fe, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     230
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16F#\xf8x$\x89\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00D#\xf8\xff\xfex$\x89\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xeb\xe2\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xffx$\x89'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 46:23:f8:78:24:89, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     231
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\xb6(\xb8\x11J\xfe\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\xb4(\xb8\xff\xfe\x11J\xfe\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00o\xc1\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x11J\xfe'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: b6:28:b8:11:4a:fe, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     232
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+Connection [00-00-00-00-00-01 16] is up 
+Initializing Firewall LearningSwitch
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:01
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:02
+Adding firewall rule in 00-00-00-00-00-01: 00:00:00:00:00:03
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 2
+  reason: 0
+  data: b'33\xff\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02\x87\x00\xf7\x89\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\x0e\x01\xf2\xb3\xfa\xd0\x88\x0b'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:ff:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     240
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xac\xd7\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xfff\xc1/\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     241
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 3
+  reason: 0
+  data: b'33\xff\x00\x00\x03\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03\x87\x00\xbc\xdf\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\x0e\x012W\x9b\xb3\xe2-'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:ff:00:00:03
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     242
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 1
+  reason: 0
+  data: b'33\xff\x00\x00\x01\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01\x87\x00\xddD\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\x0e\x01\xf2+c~:-'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:ff:00:00:01
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  102
+    xid:     243
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00U\xd2\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x8c\x18\x11\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     244
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\x83e\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xffF\xea\xc0\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     245
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 4
+  reason: 0
+  data: b'33\xff\x00\x00\x04\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04\x87\x00c\xa5\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\x0e\x01\xde\x89\xf0\x90:V'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:ff:00:00:04
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     246
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 5
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x05\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\x182\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\xa9U\x90\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x05'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:05, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     247
+  buffer_id: None
+  in_port: 5
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  128
+    xid:     0
+  buffer_id: None
+  total_len: 110
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x008\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00\xba\xe0\x00\x00\x00\x02\x03\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\xf7\xb2\x96\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  126
+    xid:     248
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  104
+    xid:     0
+  buffer_id: None
+  total_len: 86
+  in_port: 5
+  reason: 0
+  data: b'33\xff\x00\x00\x05\x00\x00\x00\x00\x00\x05\x86\xdd`\x00\x00\x00\x00 :\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x05\x87\x00KN\x00\x00\x00\x00\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x05\x0e\x01\x96\x8f\xc4\x11\xc7$'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:05, packet.dst: 33:33:ff:00:00:05
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     249
+  buffer_id: None
+  in_port: 5
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     250
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     251
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x03\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     252
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     253
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     254
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     255
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x05\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     256
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x01\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     257
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     258
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x01\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     259
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x07\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     260
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00p\x03\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:16
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  106
+    xid:     261
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 5
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x05\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x05\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00o\xff\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x05'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:05, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     262
+  buffer_id: None
+  in_port: 5
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 5
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x05\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x05\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{$\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x05'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:05, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     263
+  buffer_id: None
+  in_port: 5
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  108
+    xid:     0
+  buffer_id: None
+  total_len: 90
+  in_port: 5
+  reason: 0
+  data: b'33\x00\x00\x00\x16\x00\x00\x00\x00\x00\x05\x86\xdd`\x00\x00\x00\x00$\x00\x01\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x05\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x16:\x00\x05\x02\x00\x00\x01\x00\x8f\x00o\xff\x00\x00\x00\x01\x04\x00\x00\x00\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\xff\x00\x00\x05'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:05, packet.dst: 33:33:00:00:00:16
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     264
+  buffer_id: None
+  in_port: 5
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     265
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     266
+  buffer_id: None
+  in_port: 2
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     267
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  86
+    xid:     268
+  buffer_id: None
+  in_port: 3
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 5
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x05\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x05\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{$\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x05'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:05, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     269
+  buffer_id: None
+  in_port: 5
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  58
+    xid:     270
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  58
+    xid:     271
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  58
+    xid:     272
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  58
+    xid:     273
+  buffer_id: None
+  in_port: 1
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x00\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: ff:ff:ff:ff:ff:ff
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     274
+  buffer_id: None
+  in_port: 1
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 3
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x03\x08\x06\x00\x01\x08\x00\x06\x04\x00\x02\x00\x00\x00\x00\x00\x03\n\x00\x00\x03\x00\x00\x00\x00\x00\x01\n\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 00:00:00:00:00:01
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     275
+  match: 
+    in_port: 3
+    dl_src: 00:00:00:00:00:03
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x806
+    nw_proto: 2
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.0.1
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  116
+    xid:     0
+  buffer_id: None
+  total_len: 98
+  in_port: 1
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x01\x08\x00E\x00\x00T\x06\x80@\x00@\x01 &\n\x00\x00\x01\n\x00\x00\x03\x08\x00\x05\xbd\x04\xb3\x00\x04\xaa\x95\xaed\x00\x00\x00\x00\xcd\xbe\x08\x00\x00\x00\x00\x00\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 00:00:00:00:00:03
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     278
+  match: 
+    in_port: 1
+    dl_src: 00:00:00:00:00:01
+    dl_dst: 00:00:00:00:00:03
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 1
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 8
+    tp_dst: 0
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  116
+    xid:     0
+  buffer_id: None
+  total_len: 98
+  in_port: 1
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x01\x08\x00E\x00\x00T\x06\x94@\x00@\x01 \x12\n\x00\x00\x01\n\x00\x00\x03\x08\x00\xc8^\x04\xb3\x00\x05\xab\x95\xaed\x00\x00\x00\x00\t\x1c\t\x00\x00\x00\x00\x00\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 00:00:00:00:00:03
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     281
+  match: 
+    in_port: 1
+    dl_src: 00:00:00:00:00:01
+    dl_dst: 00:00:00:00:00:03
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 1
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 8
+    tp_dst: 0
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  116
+    xid:     0
+  buffer_id: None
+  total_len: 98
+  in_port: 3
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x03\x08\x00E\x00\x00T\x8f\xfe\x00\x00@\x01\xd6\xa7\n\x00\x00\x03\n\x00\x00\x01\x00\x00\r\xbd\x04\xb3\x00\x04\xaa\x95\xaed\x00\x00\x00\x00\xcd\xbe\x08\x00\x00\x00\x00\x00\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 00:00:00:00:00:01
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     284
+  match: 
+    in_port: 3
+    dl_src: 00:00:00:00:00:03
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 1
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.0.1
+    tp_src: 0
+    tp_dst: 0
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  116
+    xid:     0
+  buffer_id: None
+  total_len: 98
+  in_port: 3
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x03\x08\x00E\x00\x00T\x8f\xff\x00\x00@\x01\xd6\xa6\n\x00\x00\x03\n\x00\x00\x01\x00\x00\xd0^\x04\xb3\x00\x05\xab\x95\xaed\x00\x00\x00\x00\t\x1c\t\x00\x00\x00\x00\x00\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f !"#$%&\'()*+,-./01234567'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 00:00:00:00:00:01
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     287
+  match: 
+    in_port: 3
+    dl_src: 00:00:00:00:00:03
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 1
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.0.1
+    tp_src: 0
+    tp_dst: 0
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     290
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     291
+  buffer_id: None
+  in_port: 1
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     292
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     293
+  buffer_id: None
+  in_port: 3
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 5
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x05\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x05\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{$\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x05'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:05, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     294
+  buffer_id: None
+  in_port: 5
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 3
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x03\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x03\n\x00\x00\x03\x00\x00\x00\x00\x00\x00\n\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 00:00:00:00:00:01
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     295
+  match: 
+    in_port: 3
+    dl_src: 00:00:00:00:00:03
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x806
+    nw_proto: 1
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.0.1
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 1
+  reason: 0
+  data: b'\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x01\x08\x06\x00\x01\x08\x00\x06\x04\x00\x02\x00\x00\x00\x00\x00\x01\n\x00\x00\x01\x00\x00\x00\x00\x00\x03\n\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 00:00:00:00:00:03
+5: Create an entry in the switch's flow table.
+
+
+
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  80
+    xid:     298
+  match: 
+    in_port: 1
+    dl_src: 00:00:00:00:00:01
+    dl_dst: 00:00:00:00:00:03
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x806
+    nw_proto: 2
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 30
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     301
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     302
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 2
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x02\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x02\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{*\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:02, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     303
+  buffer_id: None
+  in_port: 2
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     304
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     305
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     306
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 1
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x01\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x01\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{,\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x01'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:01, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     307
+  buffer_id: None
+  in_port: 1
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  60
+    xid:     0
+  buffer_id: None
+  total_len: 42
+  in_port: 4
+  reason: 0
+  data: b'\xff\xff\xff\xff\xff\xff\x00\x00\x00\x00\x00\x04\x08\x06\x00\x01\x08\x00\x06\x04\x00\x01\x00\x00\x00\x00\x00\x04\n\x00\x00\x04\x00\x00\x00\x00\x00\x00\n\x00\x00\x02'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: ff:ff:ff:ff:ff:ff
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     308
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 4
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x04\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x04\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{&\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x04'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:04, packet.dst: 33:33:00:00:00:02
+Drop
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  16
+    xid:     309
+  buffer_id: None
+  in_port: 4
+  actions_len: 0
+  actions:
+
+
+_handle_packetIn
+
+
+
+ofp_packet_in
+  header: 
+    version: 1
+    type:    10 (OFPT_PACKET_IN)
+    length:  88
+    xid:     0
+  buffer_id: None
+  total_len: 70
+  in_port: 3
+  reason: 0
+  data: b'33\x00\x00\x00\x02\x00\x00\x00\x00\x00\x03\x86\xdd`\x00\x00\x00\x00\x10:\xff\xfe\x80\x00\x00\x00\x00\x00\x00\x02\x00\x00\xff\xfe\x00\x00\x03\xff\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x85\x00{(\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x03'
+
+
+event.dpid: 00-00-00-00-00-01, packet.src: 00:00:00:00:00:03, packet.dst: 33:33:00:00:00:02
+Flood
+
+
+
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  94
+    xid:     310
+  buffer_id: None
+  in_port: 3
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+
+
