@@ -1,0 +1,1969 @@
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     7
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+IP Load Balancer Ready.
+Load Balancing on: [00-00-00-00-00-01 1]
+Mohammadreza INFO
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a55eb60>
+Server up: 10.0.0.1
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     9
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a55f850>
+Server up: 10.0.0.2
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     10
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a55fa00>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     11
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a560940>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     12
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a560880>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     13
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a561660>
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a561660>
+Directing traffic to: 10.0.0.2
+MINFO: Set up table entry towards selected server 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     14
+  match: 
+    in_port: 3
+    dl_src: 3a:e6:24:2c:02:57
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.1.1
+    tp_src: 51826
+    tp_dst: 80
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 5
+    len: 16
+    dl_addr: 72:43:27:5a:ff:83
+    type: 7
+    len: 8
+    nw_addr: 10.0.0.2
+    type: 0
+    len: 8
+    port: 2
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a561660>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     17
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51826
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a561660>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     20
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51826
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a561660>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     23
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51826
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3Install reverse table entry
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a561660>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     26
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51826
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a561660>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     29
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51826
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     32
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562b90>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     33
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562500>
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562500>
+Directing traffic to: 10.0.0.1
+MINFO: Set up table entry towards selected server 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     34
+  match: 
+    in_port: 3
+    dl_src: 3a:e6:24:2c:02:57
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.1.1
+    tp_src: 51838
+    tp_dst: 80
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 5
+    len: 16
+    dl_addr: 76:1d:6b:c8:4c:72
+    type: 7
+    len: 8
+    nw_addr: 10.0.0.1
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562500>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     37
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51838
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562500>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     40
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51838
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562500>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     43
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51838
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562500>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     46
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51838
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562500>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     49
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51838
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562b90>
+Directing traffic to: 10.0.0.1
+MINFO: Set up table entry towards selected server 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     52
+  match: 
+    in_port: 3
+    dl_src: 3a:e6:24:2c:02:57
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.1.1
+    tp_src: 51850
+    tp_dst: 80
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 5
+    len: 16
+    dl_addr: 76:1d:6b:c8:4c:72
+    type: 7
+    len: 8
+    nw_addr: 10.0.0.1
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562b90>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     55
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51850
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562b90>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     58
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51850
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562b90>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     61
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51850
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562b90>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     64
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51850
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562b90>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     67
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51850
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a578310>
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a578310>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     72
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5790f0>
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5790f0>
+Directing traffic to: 10.0.0.2
+MINFO: Set up table entry towards selected server 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     73
+  match: 
+    in_port: 3
+    dl_src: 3a:e6:24:2c:02:57
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.1.1
+    tp_src: 51862
+    tp_dst: 80
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 5
+    len: 16
+    dl_addr: 72:43:27:5a:ff:83
+    type: 7
+    len: 8
+    nw_addr: 10.0.0.2
+    type: 0
+    len: 8
+    port: 2
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5790f0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     76
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51862
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5790f0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     79
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51862
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5790f0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     82
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51862
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5790f0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     85
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51862
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a578310>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     88
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 51862
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     91
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5787f0>
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5787c0>
+Directing traffic to: 10.0.0.2
+MINFO: Set up table entry towards selected server 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     92
+  match: 
+    in_port: 3
+    dl_src: 3a:e6:24:2c:02:57
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.1.1
+    tp_src: 45072
+    tp_dst: 80
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 5
+    len: 16
+    dl_addr: 72:43:27:5a:ff:83
+    type: 7
+    len: 8
+    nw_addr: 10.0.0.2
+    type: 0
+    len: 8
+    port: 2
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5787c0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     95
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45072
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5787c0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     98
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45072
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5787c0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     101
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45072
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5787c0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     104
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45072
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5787c0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     107
+  match: 
+    in_port: 2
+    dl_src: 72:43:27:5a:ff:83
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.2
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45072
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5787f0>
+Directing traffic to: 10.0.0.1
+MINFO: Set up table entry towards selected server 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     110
+  match: 
+    in_port: 3
+    dl_src: 3a:e6:24:2c:02:57
+    dl_dst: 00:00:00:00:00:01
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.3
+    nw_dst: 10.0.1.1
+    tp_src: 45086
+    tp_dst: 80
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 5
+    len: 16
+    dl_addr: 76:1d:6b:c8:4c:72
+    type: 7
+    len: 8
+    nw_addr: 10.0.0.1
+    type: 0
+    len: 8
+    port: 1
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a560cd0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     113
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45086
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a560cd0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     116
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45086
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a560cd0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     119
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45086
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a560cd0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     122
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45086
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a563ee0>
+MINFO: Install reverse table entry 
+ofp_flow_mod
+  header: 
+    version: 1
+    type:    14 (OFPT_FLOW_MOD)
+    length:  104
+    xid:     125
+  match: 
+    in_port: 1
+    dl_src: 76:1d:6b:c8:4c:72
+    dl_dst: 3a:e6:24:2c:02:57
+    dl_vlan: 65535
+    dl_vlan_pcp: 0
+    dl_type: 0x800
+    nw_tos: 0
+    nw_proto: 6
+    nw_src: 10.0.0.1
+    nw_dst: 10.0.0.3
+    tp_src: 80
+    tp_dst: 45086
+
+  cookie: 0
+  command: 0
+  idle_timeout: 10
+  hard_timeout: 0
+  priority: 32768
+  buffer_id: None
+  out_port: 65535
+  flags: 0
+  actions: 
+    type: 4
+    len: 16
+    dl_addr: 00:00:00:00:00:01
+    type: 6
+    len: 8
+    nw_addr: 10.0.1.1
+    type: 0
+    len: 8
+    port: 3
+    max_len: 65535
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     128
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a560460>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     129
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a55eb30>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     130
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a562710>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     131
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a55f850>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     132
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a579fc0>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     133
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a57a2f0>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     134
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a57ae60>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     135
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a57b490>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     136
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5794e0>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     137
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a556410>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     138
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a556d40>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     139
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a5542b0>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     140
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a554520>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     141
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a57ae30>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     142
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a579000>
+MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT 
+ofp_packet_out
+  header: 
+    version: 1
+    type:    13 (OFPT_PACKET_OUT)
+    length:  66
+    xid:     143
+  buffer_id: None
+  in_port: 65535
+  actions_len: 1
+  actions: 
+    type: 0
+    len: 8
+    port: 65531
+    max_len: 65535
+MINFO: PacketIN 
+<pox.openflow.PacketIn object at 0x7f924a579c60>

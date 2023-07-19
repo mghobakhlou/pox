@@ -41,7 +41,7 @@ import random
 FLOW_IDLE_TIMEOUT = 10
 FLOW_MEMORY_TIMEOUT = 60 * 5
 
-
+f = open("MINFO_Log.txt", "w")
 
 class MemoryEntry (object):
   """
@@ -175,6 +175,10 @@ class iplb (object):
     msg.data = e.pack()
     msg.actions.append(of.ofp_action_output(port = of.OFPP_FLOOD))
     msg.in_port = of.OFPP_NONE
+    self.log.info("MINFO: Send an ARP to a server to see if it is still up ---> OFPT_PACKET_OUT")
+    f.write("MINFO: Send an ARP to a server to see if it is still up -- OFPT_PACKET_OUT \n")
+    # self.log.info(msg)
+    f.write(str(msg) + '\n')
     self.con.send(msg)
 
     self.outstanding_probes[server] = time.time() + self.arp_timeout
@@ -199,11 +203,18 @@ class iplb (object):
   def _handle_PacketIn (self, event):
     inport = event.port
     packet = event.parsed
-
+    self.log.info("MINFO: PacketIN")
+    f.write("MINFO: PacketIN \n")
+    # self.log.info(event)
+    f.write(str(event) + '\n')
     def drop ():
       if event.ofp.buffer_id is not None:
         # Kill the buffer
         msg = of.ofp_packet_out(data = event.ofp)
+        self.log.info("MINFO: Drop - Kill the buffer")
+        f.write("MINFO: Drop - Kill the buffer \n")
+        # self.log.info(msg)
+        f.write(str(msg) + '\n')
         self.con.send(msg)
       return None
 
@@ -224,6 +235,7 @@ class iplb (object):
               # Ooh, new server.
               self.live_servers[arpp.protosrc] = arpp.hwsrc,inport
               self.log.info("Server %s up", arpp.protosrc)
+              f.write("Server up: " + str(arpp.protosrc) + "\n")
         return
 
       # Not TCP and not ARP.  Don't know what to do with this.  Drop it.
@@ -265,6 +277,10 @@ class iplb (object):
                             data=event.ofp,
                             actions=actions,
                             match=match)
+      self.log.info("MINFO: Install reverse table entry")
+      f.write("MINFO: Install reverse table entry \n")
+      # self.log.info(msg)
+      f.write(str(msg) + '\n')
       self.con.send(msg)
 
     elif ipp.dstip == self.service_ip:
@@ -282,6 +298,7 @@ class iplb (object):
         # Pick a server for this flow
         server = self._pick_server(key, inport)
         self.log.debug("Directing traffic to %s", server)
+        f.write("Directing traffic to: " + str(server)+ "\n")
         entry = MemoryEntry(server, packet, inport)
         self.memory[entry.key1] = entry
         self.memory[entry.key2] = entry
@@ -304,6 +321,10 @@ class iplb (object):
                             data=event.ofp,
                             actions=actions,
                             match=match)
+      self.log.info("MINFO: Set up table entry towards selected server")
+      f.write("MINFO: Set up table entry towards selected server \n")
+      # self.log.info(msg)
+      f.write(str(msg) + '\n')
       self.con.send(msg)
 
 
@@ -350,7 +371,11 @@ def launch (ip, servers, dpid = None):
         # Need to initialize first...
         core.registerNew(iplb, event.connection, IPAddr(ip), servers)
         log.info("IP Load Balancer Ready.")
+        f.write("IP Load Balancer Ready.\n")
       log.info("Load Balancing on %s", event.connection)
+      f.write("Load Balancing on: " + str(event.connection) + "\n")
+      log.info("Mohammadreza INFO")
+      f.write(str("Mohammadreza INFO") + '\n')
 
       # Gross hack
       core.iplb.con = event.connection
@@ -358,3 +383,5 @@ def launch (ip, servers, dpid = None):
 
 
   core.openflow.addListenerByName("ConnectionUp", _handle_ConnectionUp)
+
+i

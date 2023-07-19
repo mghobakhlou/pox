@@ -240,10 +240,10 @@ class dns(packet_base):
             return putName(s, r.rddata)
           elif r.qtype == 1: # A
             assert isinstance(r.rddata, IPAddr)
-            return s + r.rddata.raw
+            return s + r.rddata.toRaw()
           elif r.qtype == 28: # AAAA
             assert isinstance(r.rddata, IPAddr6)
-            return s + r.rddata.raw
+            return s + r.rddata.toRaw()
           else:
             return s + r.rddata
 
@@ -299,7 +299,7 @@ class dns(packet_base):
             try:
                 query_head = self.next_question(raw, query_head)
             except Exception as e:
-                self._exc(e, 'parsing questions')
+                self._exc(e, 'parsing questions line:302 dns.py')
                 return None
 
         # answers
@@ -375,12 +375,13 @@ class dns(packet_base):
     def _read_dns_name_from_index(cls, l, index, retlist):
       try:
         while True:
-            chunk_size = ord(l[index])
+            #chunk_size = ord(chr(l[index]))
+            chunk_size = l[index]
 
             # check whether we have an internal pointer
             if (chunk_size & 0xc0) == 0xc0:
                 # pull out offset from last 14 bits
-                offset = ((ord(l[index]) & 0x3) << 8 ) | ord(l[index+1])
+                offset = ((l[index] & 0x3) << 8 ) | l[index]
                 cls._read_dns_name_from_index(l, offset, retlist)
                 index += 1
                 break
@@ -397,7 +398,7 @@ class dns(packet_base):
     def read_dns_name_from_index(cls, l, index):
         retlist = []
         next = cls._read_dns_name_from_index(l, index, retlist)
-        return (next + 1, ".".join(retlist))
+        return (next + 1, b".".join(retlist))
 
     def next_rr(self, l, index, rr_list):
         array_len = len(l)
